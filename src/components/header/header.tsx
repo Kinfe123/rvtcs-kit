@@ -63,12 +63,12 @@ function Header() {
             "
             passHref
           >
-            <h1 className='font-bold text-xl cursor-pointer'> RVTCS. </h1>
+            <h1 className='font-bold text-xl cursor-pointer'> RVTCS v.1.0. </h1>
 
           </Link>
         </div>
         <div className='flex justify-center items-center'>
-          <p>Made 💻☕ - <b> <a className="hover:underline" href="https://bit.ly/KINFISHTECH" target='_blank'> KINFEMICHAEL TARIKU</a></b></p>
+          <p>Made 💻☕ - <b> <a className="hover:underline" rel="noreferrer"  href="https://bit.ly/KINFISHTECH" target='_blank'> KINFEMICHAEL TARIKU</a></b></p>
         </div>
 
         <SelectTheme />

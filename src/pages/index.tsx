@@ -35,28 +35,28 @@ export default function IndexPage({ textToCopy = 'npm create-next-app' }) {
       
       
       <div className='flex justify-center items-center  gap-10'>
-        <a href="https://vitejs.dev" target="_blank" className="" >
+        <a href="https://vitejs.dev" target="_blank" rel="noreferrer" className="" >
          <ViteLogo /> 
          
         </a>
-        <a href="https://react.dev" target="_blank" className="">
+        <a href="https://react.dev" target="_blank" rel="noreferrer" className="">
           <ReactLogo />
       
         </a>
-        <a href="https://tailwindcss.com/" target="_blank" className="">
+        <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"  className="">
 
           <TailwindcssLogo  />
 
        
        
         </a>
-        <a href="https://supabase.com" target="_blank" className="">
+        <a href="https://supabase.com" target="_blank" rel="noreferrer"  className="">
           <SupabaseLogo />
           
          
         </a>
         
-        <a href="https://clerk.com/" target="_blank" >
+        <a href="https://clerk.com/" rel="noreferrer"  target="_blank" >
           
           <img src={'https://clerk.com/_next/image?url=%2Fimages%2Fclerk-logomark-square.svg&w=1920&q=75'} width={40} height={40} className=''   alt="React logo" />
         </a>
@@ -78,11 +78,11 @@ export default function IndexPage({ textToCopy = 'npm create-next-app' }) {
           </h1>
           
         <p className="max-w-[700px] text-lg text-muted-foreground sm:text-xl ">
-          Lets help you and make your journey faster as much as possible Provides you a hands down docs that can help you to master the concepts
+          Lets help you and make your journey faster as much as possible by providing you a very hands down docs that can help you to start building projects.
         </p>
       </div>
       <div className="flex justify-center items-center  gap-10">
-    <div className='bg-white  outline outline-2  outline-offset-2  rounded-md px-3 py-3 text-black'>
+    <div className='bg-white  outline outline-2  outline-offset-2  rounded-md px-3 py-2 text-black'>
     
           
         <Link
@@ -95,7 +95,7 @@ export default function IndexPage({ textToCopy = 'npm create-next-app' }) {
           Documentation
         </Link>
         </div>
-        <div className='bg-white flex flex-row justify-center items-center gap-3 outline outline-2  outline-offset-2  rounded-md px-3 py-3 text-black'>
+        <div className='bg-white flex flex-row justify-center items-center gap-3 outline outline-2  outline-offset-2  rounded-md px-3 py-2 text-black'>
         <AiFillGithub />
         <Link
           target="_blank"

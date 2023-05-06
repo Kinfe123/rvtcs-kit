@@ -16,6 +16,10 @@ export const SIDEBAR: Array<SidebarItem> = [
         title: 'Overview',
         slug: '/docs',
       },
+      {
+        title: 'Other Details',
+        slug: '/docs/detail',
+      },
     ],
   },
 ];

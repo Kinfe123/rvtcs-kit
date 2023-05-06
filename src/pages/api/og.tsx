@@ -23,7 +23,7 @@ export default function handler(req: NextRequest) {
       (
         <div tw="relative w-full h-full flex flex-col justify-center bg-white">
           <div tw="flex flex-col px-24">
-            <h1 tw="text-4xl text-slate-900 mb-10">Galaxy template</h1>
+            <h1 tw="text-4xl text-slate-900 mb-10">RVTCS.</h1>
             <span tw="bg-blue-50 px-2 py-1 rounded text-sm text-blue-600">
               {title}
             </span>
