@@ -1,67 +1,85 @@
-<div align="center"><strong>Non-opinionated TypeScript template starter for Next.js</strong></div>
-<div align="center">All you need to start documenting your project..</div>
+---
+title: RVTCS - x2 Your Dev Experience
+description: All you need to get started it just following the docs here.
+---
 
-## Why?
 
-Sometimes creating a documentation website is an exhausting task or spent much time, this template offers all nextjs features and some non-opinionated decisions to improve the developer experience.
+# 🍾 What is RVTCS ?   
 
-## Tooling
+ React + Vite + Tailwindcss + Clerk + Supabase 
 
-- editor config
-- prettier
-- husky
-- commitlint
-- git actions
-- path mapping
+ - what does it consist of ?
 
-## Features
+     ✅  ReactJS - a frontend framework for building User Interfaces
 
-- Callout
-- Disclosure
-- Tabs
-- Code Highlighting
+     ✅  Vite - Instant Server Start and far more
 
-## Performance & Design
+     ✅  Supabase - a alternative tool for firebase which can be used as BaaS
 
-- SEO-friendly
-- Mobile-friendly
-- Variable fonts
-- Dark mode
-- New experimental [OG IMAGE](https://og-playground.vercel.app/) 🔥
+     ✅  Clerk - A tool for user management in your app like authentication , authorization and so much cool stuff
 
-## Commands
+     ✅  Tailwindcss - Utility first framework that makes writing css much easier and organized
+   
+  
 
-| command | description                                           |
-| ------- | ----------------------------------------------------- |
-| start   | starts a simple server with the build production code |
-| dev     | runs your application on `localhost:3000`             |
-| build   | creates the production build version                  |
-| lint    | runs the linter in all components and pages           |
-| test    | runs jest to test all components and pages            |
 
-## Quick Start
 
-The best way to start with this template is using [Create Next App](https://nextjs.org/docs/api-reference/create-next-app)
 
+
+---
+# 🔥 Let's make a use of it 
+
+
+
+
+RVTCS - A Modern and Elegant way creating a fullstack application with everything setup.
+
+## Installation
+
+Use the github repo [github](https://github.com/Kinfe123/RVTCS-Starter-Kit/) to install the starter project.
+
+- First Of all fork the repo to your account
+
+
+-   Then clone the Repo 
 ```bash
-# yarn
-yarn create next-app -e https://github.com/mverissimo/next-galaxy-starter
-
-#npm
-npx create next-app -e https://github.com/mverissimo/next-galaxy-starter
+git clone https://github.com/Kinfe123/RVTCS-Starter-Kit/
+```
+- CD - change directory to the cloned  
+```bash
+cd RVTCS-Starter-Kit
+```
+- Install the dependencies
+```bash
+npm install
+```
+- Spin up the sever 
+```bash
+npm run dev
 ```
 
-## Deploy
+## Usage
 
-Deploy this template in one click:
+Go and create .env file after your got a keys 
+ - Clerk Publishable Key 
+ - Supabase Anonymous Key 
+ - Supabase Url 
 
-| Vercel                                                                                                                                       | Netlify                                                                                                                                                        |
-| -------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [![Deploy](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/mverissimo/next-galaxy-starter) | [![Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/mverissimo/next-galaxy-starter) |
+```javascript
+VITE_APP_CLERK_PUBLISHABLE_KEY=''
+VITE_APP_SUPABASE_URL=''
+VITE_APP_SUPABASE_ANON_KEY=''
 
-## Built with
 
-- [Nextjs](https://nextjs.org/)
-- [Markdoc](https://markdoc.io/)
-- [Headless UI](https://headlessui.com/)
-- [Tailwindcss](https://tailwindcss.com/)
+```
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first
+to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/) 
