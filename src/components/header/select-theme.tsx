@@ -1,4 +1,5 @@
 import React from 'react';
+import {AiFillGithub} from 'react-icons/ai'
 
 import { Listbox, Transition } from '@headlessui/react';
 import {
@@ -9,6 +10,7 @@ import {
 
 import { useTheme } from 'next-themes';
 import { useIsMounted } from './use-is-mounted';
+import Link from 'next/link';
 
 const THEMES = {
   dark: {
@@ -40,7 +42,14 @@ export function SelectTheme() {
 
   return (
     <Listbox value={theme} onChange={setTheme}>
-      <div className="relative">
+      <div className="relative flex justify-center gap-4  ">
+        
+        <div className="flex justify-center items-center cursor-pointer">
+          <Link href={'https://github.com/Kinfe123/RVTCS-Starter-Kit/'} target='_blank'>
+        <AiFillGithub size={24}/>
+          </Link>
+
+        </div>
         <Listbox.Button
           aria-label="Select theme"
           className="
