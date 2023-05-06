@@ -37,28 +37,24 @@ function MyApp(props: MyAppProps) {
           name="viewport"
           content="width=device-width, initial-scale=1, minimum-scale=1"
         />
-        <meta name="description" content={DESCRIPTION} />
+        <meta name="description" content='Elegant way of creating fullstack app' />
 
         {/*<!-- Twitter Meta Tags -->*/}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content={SITE} />
-        <meta name="twitter:title" content={TITLE} />
-        <meta name="twitter:description" content={DESCRIPTION} />
-        <meta name="twitter:creator" content="@mverissimu" />
+        <meta name="twitter:site" content='https://rvtcs.vercel.app/' />
+        <meta name="twitter:title" content='RVTCS' />
+        <meta name="twitter:description" content='Elegant way of creating fullstack app' />
+        <meta name="twitter:creator" content="@Kinfe123" />
 
         {/*<!-- Facebook Meta Tags -->*/}
-        <meta property="og:url" content={SITE} />
+        <meta property="og:url" content='https://rvtcs.vercel.app/' />
         <meta property="og:type" content="article" />
-        <meta property="og:title" content={TITLE} />
-        <meta property="og:description" content={DESCRIPTION} />
+        <meta property="og:title" content='RVTCS' />
+        <meta property="og:description" content='Elegant way of creating fullstack app' />
 
         <meta
           property="og:image"
-          content={`${
-            process.env.VERCEL_URL ? SITE : ''
-          }/api/og?title=${encodeURIComponent(
-            TITLE
-          )}&description=${encodeURIComponent(DESCRIPTION)}`}
+         
         />
       </Head>
 
