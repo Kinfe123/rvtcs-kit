@@ -4,12 +4,17 @@ import ReactLogo from '../../public/assets/react.svg'
 import SupabaseLogo from '../../public/assets/supabase.svg'
 import TailwindcssLogo from '../../public/assets/tailwindcss.svg'
 import {AiFillGithub} from 'react-icons/ai'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import { Router , useRouter} from 'next/router'
 
 //<span className="block bg-gradient-to-r from-brandred to-brandblue bg-clip-text text-transparent px-2">
 
 export default function IndexPage({ textToCopy = 'npm create-next-app' }) {
   const [copied, setCopied] = useState(false);
+  const router = useRouter()
+
+
+  
 
   const copyToClipboard = () => {
     navigator.clipboard.writeText(textToCopy).then(

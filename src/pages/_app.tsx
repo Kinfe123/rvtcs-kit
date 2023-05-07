@@ -19,12 +19,14 @@ interface MyAppProps extends AppProps {
 
 function MyApp(props: MyAppProps) {
   let { Component, pageProps, router } = props;
+  
 
   let isDocs = router.asPath.startsWith('/docs');
+  
 
   let TITLE = pageProps.markdoc?.frontmatter.title;
   let DESCRIPTION = pageProps.markdoc?.frontmatter.description;
-  let SITE = 'https://' + process.env.VERCEL_URL;
+  let SITE = 'https://rvtcs.vercel.app/' 
 
   return (
     <React.Fragment>
@@ -62,6 +64,9 @@ function MyApp(props: MyAppProps) {
         <SkipToContent />
         <Header />
 
+
+         
+       
         {isDocs ? (
           <LayoutDocs markdoc={pageProps.markdoc}>
             <Component {...pageProps} />
