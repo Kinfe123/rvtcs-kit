@@ -9,7 +9,7 @@ import { Router , useRouter} from 'next/router'
 
 //<span className="block bg-gradient-to-r from-brandred to-brandblue bg-clip-text text-transparent px-2">
 
-export default function IndexPage({ textToCopy = 'npm create-next-app' }) {
+export default function IndexPage({ textToCopy = 'npm create-rvtcs@latest my-app' }) {
   const [copied, setCopied] = useState(false);
   const router = useRouter()
 
@@ -120,7 +120,7 @@ export default function IndexPage({ textToCopy = 'npm create-next-app' }) {
           " text-sm border w-36 border-gray-500 rounded-md p-3 transition w-fit"
         }
       >
-        {copied ? "Copied ✅" : "npx create-rvtcs@latest 📋"}
+        {copied ? "Copied ✅" : "npx create-rvtcs@latest my-app 📋"}
       </button>
     </div>
     </section>

@@ -36,6 +36,43 @@ RVTCS - A Modern and Elegant way creating a fullstack application with everythin
 
 ## Installation
 
+
+
+### Step 1 - Using npm 
+
+✅ You can get started by installing and using command of npm as follows:
+  
+
+
+```bash 
+npm create-rvtcs@latest my-app
+```
+
+- After you have excuted the above command succesfully , You can get started navigating to your working directory
+
+```bash 
+cd my-app
+```
+
+- Finally , You can use the `npm run dev` to spin up the dev server
+```bash
+npm run dev
+
+```
+- You will redirected and given a `vite localhost and port` like  `http://localhost:5713`
+
+- Then start mashing them up based on docs.
+
+
+
+### Step 2 - Using Github
+
+
+
+
+
+
+
 Use the github repo [github](https://github.com/Kinfe123/RVTCS-Starter-Kit/) to install the starter project.
 
 - First Of all fork the repo to your account
