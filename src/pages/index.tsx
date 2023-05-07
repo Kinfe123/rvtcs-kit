@@ -67,7 +67,7 @@ export default function IndexPage({ textToCopy = 'npm create-rvtcs@latest my-app
         </a>
       </div>
       <div className="title flex justify-center items-center my-3 py-3">
-        <h1 className="text-xl font-bold bg-gradient-to-r from-blue-500  to-red-400 bg-clip-text text-transparent">Vite ➕ React ➕ Tailwindcss ➕ Supabase ➕ Clerk</h1>
+        <h1 className="text-xl font-bold bg-gradient-to-r from-blue-500  to-red-400 bg-clip-text text-transparent to-small">Vite ➕ React ➕ Tailwindcss ➕ Supabase ➕ Clerk</h1>
       </div>
 
 

@@ -68,7 +68,7 @@ function Header() {
           </Link>
         </div>
         <div className='flex justify-center items-center'>
-          <p>Made 💻🎧☕ - <b> <a className="hover:underline" rel="noreferrer"  href="https://bit.ly/KINFISHTECH" target='_blank'> KINFEMICHAEL TARIKU</a></b></p>
+          <p className='to-display'>Made 💻🎧☕ - <b> <a className="hover:underline lg:" rel="noreferrer"  href="https://bit.ly/KINFISHTECH" target='_blank'> KINFEMICHAEL TARIKU</a></b></p>
         </div>
 
         <SelectTheme />

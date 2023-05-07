@@ -51,3 +51,15 @@ pre[class*='language-'] {
     @apply bg-stone-800;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .to-display {
+    display: none;
+    
+  }
+  .to-small {
+    font-size:14px;
+  }
+  
+  
+}
