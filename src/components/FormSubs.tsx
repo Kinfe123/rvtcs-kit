@@ -4,7 +4,7 @@ function FormSub() {
 
   const [email, setEmail] = useState('')
   const [state, setState] = useState('idle')
-  const [errorMsg, setErrorMsg] = useState(null)
+  const [errorMsg, setErrorMsg] = useState('')
 
   const subscribe = async (e:any) => {
     e.preventDefault()
@@ -17,7 +17,8 @@ function FormSub() {
       setEmail('')
     } catch (e) {
       
-      setErrorMsg(e.response.data.error)
+    // setErrorMsg("Error has occured!
+     setErrorMsg('Error has occured!')
 
       setState('Error')
     }

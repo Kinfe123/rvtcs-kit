@@ -1,6 +1,7 @@
 import axios from 'axios'
 
-export default async (req, res) => {
+// eslint-disable-next-line import/no-anonymous-default-export
+export default async (req: { body: { email: any } }, res: { status: (arg0: number) => { (): any; new(): any; json: { (arg0: { error?: any; message?: string }): any; new(): any } } }) => {
   const { email } = req.body
 
   if (!email || !email.length) {
@@ -35,6 +36,6 @@ export default async (req, res) => {
     return res.status(201).json({ message: 'success' })
   } catch (error) {
     console.log(error)
-    return res.status(500).json({ error: error.message })
+    return res.status(500).json({ error: error })
   }
 }
