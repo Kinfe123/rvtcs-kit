@@ -20,6 +20,10 @@ export const SIDEBAR: Array<SidebarItem> = [
         title: 'Other Details',
         slug: '/docs/detail',
       },
+      {
+        title: 'Deployment',
+        slug: '/docs/deploy',
+      },
     ],
   },
 ];

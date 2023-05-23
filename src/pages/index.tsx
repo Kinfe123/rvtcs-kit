@@ -6,6 +6,16 @@ import TailwindcssLogo from '../../public/assets/tailwindcss.svg'
 import {AiFillGithub} from 'react-icons/ai'
 import { useEffect, useState } from 'react'
 import { Router , useRouter} from 'next/router'
+import Features from '@/components/Features'
+import Subscribe from './api/subscribe'
+import FormSub from '@/components/FormSubs'
+import Faq from '@/components/Faq'
+import Footer from '@/components/Footer'
+import Subs from '@/components/Subs'
+import Banner from '@/components/Banner'
+import Example from '@/components/Team'
+import Mashkabet from '@/components/Maskabet'
+import Contact from '@/components/Contact'
 
 //<span className="block bg-gradient-to-r from-brandred to-brandblue bg-clip-text text-transparent px-2">
 
@@ -34,8 +44,9 @@ export default function IndexPage({ textToCopy = 'npm create-rvtcs@latest my-app
   return (
 
     <div className='flex flex-col justify-center items-center gap-10 my-10'>
+      {/* <Banner/> */}
+      
 
-   
     <section className="container grid items-center justify-center my-10 gap-6 pb-8 pt-6 md:py-10">
       
       
@@ -83,7 +94,7 @@ export default function IndexPage({ textToCopy = 'npm create-rvtcs@latest my-app
           </h1>
           
         <p className="max-w-[700px] text-lg text-muted-foreground sm:text-xl ">
-          Lets help you and make your journey faster as much as possible by providing you a very hands down docs that can help you to start building projects.
+          Lets help you and make your journey faster as much as possible by providing you a very hands down docs that can help you to start building projects with everything setup from frontend to backend.
         </p>
       </div>
       <div className="flex justify-center items-center  gap-10">
@@ -124,6 +135,16 @@ export default function IndexPage({ textToCopy = 'npm create-rvtcs@latest my-app
       </button>
     </div>
     </section>
+        <Features />
+        <Faq />
+        <Example />
+        <Mashkabet />
+        <Contact />
+        <FormSub />
+      
+
+        <Footer />
+   
     </div>
   )
 }

@@ -17,7 +17,7 @@ function Header() {
 
         w-full
         h-[4rem]
-        py-3
+        py-4
 
         mx-auto
 
@@ -49,7 +49,7 @@ function Header() {
       >
         <div className="flex items-center">
           <Burger />
-          <Link
+          <Link 
             href="/"
             className="
               flex
