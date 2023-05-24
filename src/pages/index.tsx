@@ -108,6 +108,7 @@ export default function IndexPage({ textToCopy = 'npm create-rvtcs@latest my-app
           className='bg-white'
           // className={buttonVariants({ size: "lg" })}
         >
+          {/**Thsis ia place for the ccomment. */}
           Documentation
         </Link>
         </div>

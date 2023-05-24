@@ -32,7 +32,9 @@ export function useHeadingsObserver(): {
 
       let getIndex = (id: string): number => {
         return headings.findIndex((heading) => heading.id === id);
+        
       };
+
 
       // If there is only one visible heading, this is our "active" heading
       if (visibles.length === 1) {
