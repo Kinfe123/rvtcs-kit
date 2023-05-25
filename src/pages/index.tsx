@@ -97,22 +97,50 @@ export default function IndexPage({ textToCopy = 'npm create-rvtcs@latest my-app
           Lets help you and make your journey faster as much as possible by providing you a very hands down docs that can help you to start building projects with everything setup from frontend to backend.
         </p>
       </div>
-      <div className="flex justify-center items-center  gap-10">
-    <div className='bg-white  outline outline-2  outline-offset-2  rounded-md px-3 py-2 text-black'>
+      <div className="flex justify-center items-center  gap-5">
+
+      <a
+        href="/docs"
+        className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
+      >
+        Documentation
+        <svg
+          aria-hidden="true"
+          className="ml-2 -mr-1 w-4 h-4"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fillRule="evenodd"
+            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+            clipRule="evenodd"
+          />
+        </svg>
+      </a>
+    {/* <div className='bg-white  outline outline-2  outline-offset-2  rounded-md px-3 py-3 text-black'> */}
     
           
-        <Link
+        {/* <Link
           href={'/docs'}
           target="_blank"
           rel="noreferrer"
           className='bg-white'
-          // className={buttonVariants({ size: "lg" })}
+       
         >
-          {/**Thsis ia place for the ccomment. */}
+        
           Documentation
         </Link>
-        </div>
-        <div className='bg-white flex flex-row justify-center items-center gap-3 outline outline-2  outline-offset-2  rounded-md px-3 py-2 text-black'>
+        </div> */}
+        <a
+        href="https://github.com/Kinfe123/RVTCS-Starter-Kit"
+        className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-black rounded-lg bg-white hover:bg-blue-800 hover:text-white focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
+      >
+        <AiFillGithub />
+        <div className="mx-0.5"></div>
+        GitHub
+      </a>
+        {/* <div className='bg-white flex flex-row justify-center items-center gap-3 outline outline-2  outline-offset-2  rounded-md px-3 py-3 text-black'>
         <AiFillGithub />
         <Link
           target="_blank"
@@ -122,7 +150,7 @@ export default function IndexPage({ textToCopy = 'npm create-rvtcs@latest my-app
         >
           GitHub
         </Link>
-        </div>
+        </div> */}
       </div>
       <div className="text-center my-1">
       <button
