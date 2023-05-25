@@ -1,36 +1,53 @@
 import { useState , useRef} from  "react";
 import emailjs from '@emailjs/browser';
 
-
+type Forms  = { 
+  form: HTMLInputElement
+}
 
 const Contact = () => {
-    const form = useRef();
+    const form = useRef<HTMLFormElement>(null);
     const [loading ,setLoading] = useState<Boolean>(false)
+    // const [forms , setForms] = useState<HTMLInputElement>(form)
     const [display ,setDisplay] = useState<String>("")
     const [clicked ,setClicked] = useState<Boolean>(false)
+    // the samll task goes ere  and will be execited later after the time has been done 
 
-    const handleSubmit = (e) => {
-      setLoading(true)
-       setClicked(true)
-      e.preventDefault()
-      emailjs.sendForm(process.env.NEXT_PUBLIC_EMAIL_JS_SERVICE_ID, process.env.NEXT_PUBLIC_EAMIL_TEMPLATE_ID, form.current, process.env.NEXT_PUBLIC_EMAIL_PUBLIC_KEY)
-      .then((result) => {
-          console.log(result.text);
-          if(result){
-            setLoading(false)
-            setDisplay('✅ Thanks for reaching us.')
-            setClicked(false)
+    // console.log(form)
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
+      setLoading(true);
+      setClicked(true);
+      // if (form && form.current) {
+      //    setForms(form.current)
+      //     // setForms(form.current || undefined);
+      //     // setLoading()
+          
+      // }
+      e.preventDefault();
+      console.log(form.current);
+      emailjs.sendForm(
+          process.env.NEXT_PUBLIC_EMAIL_JS_SERVICE_ID ?? "",
+          process.env.NEXT_PUBLIC_EAMIL_TEMPLATE_ID ?? "",
+          form.current ?? "",
+          process.env.NEXT_PUBLIC_EMAIL_PUBLIC_KEY ?? ""
+      ).then(
+          (result: any) => {
+              console.log(result.text);
+              if (result) {
+                  setLoading(false);
+                  setDisplay("✅ Thanks for reaching us.");
+                  setClicked(false);
+              }
+          },
+          (error: any) => {
+              console.log(error.text);
+              setLoading(false);
+              setDisplay("❌ Please try agian.");
+              setClicked(false);
           }
-      }, (error) => {
-          console.log(error.text);
-          setLoading(false)
-          setDisplay('❌ Please try agian.')
-          setClicked(false)
-      });
-      
-    
-    }
-
+      );
+  };
+  // the code does referencing to the form using ref hook since it is typescipt it might yell at you if you didint use the right type of the reference that u will be using 
 
     return (
         <div>

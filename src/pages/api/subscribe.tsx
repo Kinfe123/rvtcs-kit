@@ -13,7 +13,7 @@ export default async (req: { body: { email: any } }, res: { status: (arg0: numbe
   const AUDIENCE_ID = process.env.MAILCHIMP_AUDIENCE_ID
   
   const url = `https://${API_SERVER}.api.mailchimp.com/3.0/lists/${AUDIENCE_ID}/members`
-
+ // the api end point for making a requst for subscription
   const data = {
     email_address: email,
     status: 'subscribed'

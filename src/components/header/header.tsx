@@ -63,7 +63,7 @@ function Header() {
             "
             passHref
           >
-            <h1 className='font-bold text-xl cursor-pointer'> RVTCS v.1.0. </h1>
+            <h1 className='font-bold text-xl cursor-pointer'> RVTCS v 1.0.1 </h1>
 
           </Link>
         </div>
